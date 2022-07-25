@@ -1,21 +1,29 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using BethanysPieShop.Website.Models;
+using BethanysPieShop.Website.ViewModels;
 
 namespace BethanysPieShop.Website.Controllers;
 
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly IPieRepository _pieRepository;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger,
+        IPieRepository pieRepository)
     {
         _logger = logger;
+        _pieRepository = pieRepository;
     }
 
     public IActionResult Index()
     {
-        return View();
+        var piesOfTheWeek = _pieRepository.PiesOfTheWeek;
+
+        if (piesOfTheWeek == null || !piesOfTheWeek.Any()) return NotFound();
+
+        return View(new HomeViewModel(piesOfTheWeek));
     }
 
     public IActionResult Privacy()

@@ -234,6 +234,7 @@ sup {
 a {
     color: #C87D52;
     text-decoration: underline;
+    cursor:pointer;
 }
 
     a:hover {
@@ -605,7 +606,7 @@ progress {
 }
 
     .blockquote-footer::before {
-        content: "��";
+        content: "— ";
     }
 
 .img-fluid {

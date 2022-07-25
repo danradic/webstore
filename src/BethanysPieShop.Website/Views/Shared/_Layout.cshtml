@@ -27,14 +27,11 @@
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Pie" asp-action="List">Pie list</a>
-                        </li>
+                                <a asp-controller="Home" asp-action="Index" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a asp-controller="Pie" asp-action="List" class="nav-link">Pies</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -48,8 +45,8 @@
             &copy; 2022 - BethanysPieShop.Website - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.js"></script>
-    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
