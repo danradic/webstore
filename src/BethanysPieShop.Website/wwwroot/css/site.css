@@ -3946,6 +3946,10 @@ textarea.form-control-lg {
     display: block;
 }
 
+header {
+    margin-bottom:15px;
+}
+
 .dropdown-header {
     display: block;
     padding: 0.5rem 1rem;
