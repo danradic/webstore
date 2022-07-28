@@ -354,6 +354,30 @@ textarea {
     line-height: inherit;
 }
 
+.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size:13px!important;
+    font-weight:100!important;
+    opacity: .4!important;
+}
+
+.form-control::-moz-placeholder { /* Firefox 19+ */
+    font-size: 13px !important;
+    font-weight: 100 !important;
+    opacity: .4 !important;
+}
+
+.form-control:-ms-input-placeholder { /* IE 10+ */
+    font-size: 13px !important;
+    font-weight: 100 !important;
+    opacity: .4 !important;
+}
+
+.form-control:-moz-placeholder { /* Firefox 18- */
+    font-size: 13px !important;
+    font-weight: 100 !important;
+    opacity: .4 !important;
+}
+
 button,
 select {
     text-transform: none;
