@@ -11894,3 +11894,15 @@ h6, .h6 {
 .form-label {
     text-transform: uppercase;
 }
+
+.td-search-img img {
+    max-width:200px;
+}
+
+td.td-search-img {
+    width: 15%;
+}
+
+td.td-search {
+    width: 85%;
+}
