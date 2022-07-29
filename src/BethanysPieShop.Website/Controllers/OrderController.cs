@@ -37,10 +37,10 @@ namespace BethanysPieShop.Website.Controllers
             _orderRepository.CreateOrder(order);
             _shoppingCart.ClearCart();
 
-            return RedirectToAction("ThankYouPage");
+            return RedirectToAction("ThankYou");
         }
 
-        public IActionResult ThankYouPage() 
+        public IActionResult ThankYou() 
         {
             ViewBag.ThankYouMessage = "Thank you for your order. You'll soon enjoy our delicios pies!";
             return View();
