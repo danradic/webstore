@@ -1,13 +1,16 @@
-# Welcome to Bethany's Pie Shop
+# Webstore
 
-Bethany bakes the most delicios pies. So far she has only sold her pies in her little store around the corner.
-But, as with everything, things change, and now she also wants her customers to be able to order one or more of these delocious pies online.
-And that is were we come in.
+Built using:
+- ASP.NET Core 6 MVC
+- NET 6
+- Entity Framework Core 6
+- ASP.NET Core Razor Pages
+- ASP.NET Core RESTful API
+- ASP.NET Core Identity
 
-The webshop is built in ASP.NET Core.
-
-The webshop has:
-- Homepage and pie list pages
+Features:
+- Homepage
+- Product list pages
 - Shopping cart
 - Checkout form
 - Search page
